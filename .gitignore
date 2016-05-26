@@ -1,0 +1,11 @@
+calcBackend/.gitignore
+calcBackend/.project
+calcBackend/.settings/.jsdtscope
+calcBackend/.settings/org.eclipse.core.resources.prefs
+calcBackend/.settings/org.eclipse.jdt.core.prefs
+calcBackend/.settings/org.eclipse.m2e.core.prefs
+calcBackend/.settings/org.eclipse.wst.common.component
+calcBackend/.settings/org.eclipse.wst.common.project.facet.core.xml
+calcBackend/.settings/org.eclipse.wst.jsdt.ui.superType.container
+calcBackend/.settings/org.eclipse.wst.jsdt.ui.superType.name
+calcBackend/.settings/org.eclipse.wst.validation.prefs
