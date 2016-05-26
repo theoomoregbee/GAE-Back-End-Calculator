@@ -27,10 +27,17 @@ public class CalcAPI {
 		return response;
 	}
 	
-	//substract b from a
-	public CalcBean substract(@Named("value1") Integer a, @Named("value2") Integer b){
+	//Subtract b from a
+	public CalcBean subtract(@Named("value1") Integer a, @Named("value2") Integer b){
 		CalcBean response = new CalcBean();
 		response.setResult(String.valueOf((a-b)));
+		return response;
+	}
+	
+	//multiplication  
+	public CalcBean multiplication(@Named("value1") Integer a, @Named("value2") Integer b){
+		CalcBean response = new CalcBean();
+		response.setResult(String.valueOf((a*b)));
 		return response;
 	}
 	
