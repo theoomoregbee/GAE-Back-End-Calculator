@@ -21,30 +21,30 @@ audiences = {Constants.ANDROID_AUDIENCE}
 public class CalcAPI {
 	
 	@ApiMethod(name = "add")
-	public CalcBean add(@Named("value1") Integer a, @Named("value2") Integer b){
+	public CalcBean add(@Named("value1") Integer value1, @Named("value2") Integer value2){
 		CalcBean response = new CalcBean();
-		response.setResult(String.valueOf((a+b)));
+		response.setResult(String.valueOf((value1+value2)));
 		return response;
 	}
 	
-	//Subtract b from a
-	public CalcBean subtract(@Named("value1") Integer a, @Named("value2") Integer b){
+	//Subtract value2 from value1
+	public CalcBean subtract(@Named("value1") Integer value1, @Named("value2") Integer value2){
 		CalcBean response = new CalcBean();
-		response.setResult(String.valueOf((a-b)));
+		response.setResult(String.valueOf((value1-value2)));
 		return response;
 	}
 	
 	//multiplication  
-	public CalcBean multiplication(@Named("value1") Integer a, @Named("value2") Integer b){
+	public CalcBean multiplication(@Named("value1") Integer value1, @Named("value2") Integer value2){
 		CalcBean response = new CalcBean();
-		response.setResult(String.valueOf((a*b)));
+		response.setResult(String.valueOf((value1*value2)));
 		return response;
 	}
 	
-	//division  
-		public CalcBean division(@Named("value1") Integer a, @Named("value2") Integer b){
+	//division  dividing value1 by value2
+		public CalcBean division(@Named("value1") Integer value1, @Named("value2") Integer value2){
 			CalcBean response = new CalcBean();
-			response.setResult(String.valueOf((a/b)));
+			response.setResult(String.valueOf((value1/value2)));
 			return response;
 		}
 	
