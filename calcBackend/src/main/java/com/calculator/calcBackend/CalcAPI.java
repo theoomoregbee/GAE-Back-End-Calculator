@@ -21,7 +21,7 @@ audiences = {Constants.ANDROID_AUDIENCE}
 public class CalcAPI {
 	
 	@ApiMethod(name = "add")
-	public CalcBean add(@Named("a") Integer a, @Named("b") Integer b){
+	public CalcBean add(@Named("value1") Integer a, @Named("value2") Integer b){
 		CalcBean response = new CalcBean();
 		response.setResult(String.valueOf((a+b)));
 		return response;
