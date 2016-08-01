@@ -26,7 +26,7 @@ public class CalcAPI {
 	 * @param value2 method argument
 	 * @return a bean object response to the requester
 	 */
-	@ApiMethod(name = "add")
+	//@ApiMethod(name = "add")
 	public CalcBean add(@Named("value1") Integer value1, @Named("value2") Integer value2){
 		CalcBean response = new CalcBean();
 		response.setResult(String.valueOf((value1+value2)));
